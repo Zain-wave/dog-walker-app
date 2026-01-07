@@ -7,10 +7,28 @@ Pets App es una aplicación móvil desarrollada en **React Native** con **Expo R
 
 ## 📂 Estructura del Proyecto
 
+```
 my-dogwalker-app/
+app/
+│   index.tsx             # Punto de entrada principal de la aplicación
+│   _layout.tsx           # Layout global para todas las rutas
 │
-├─ app/ # Rutas de Expo Router
-└─ tsconfig.json
+├───(auth)               # Rutas de autenticación de usuarios
+│       forgot-password.tsx  # Pantalla para recuperar contraseña
+│       login.tsx            # Pantalla de inicio de sesión
+│       register.tsx         # Pantalla de registro de usuario
+│
+├───(tabs)               # Navegación principal por pestañas
+│       bookings.tsx       # Pantalla de reservas
+│       home.tsx           # Pantalla principal / home
+│       profile.tsx        # Perfil de usuario
+│       _layout.tsx        # Layout específico de las pestañas
+│
+└───walker               # Funcionalidades específicas de los paseadores
+        availability.tsx  # Gestión de disponibilidad del paseador
+        earnings.tsx      # Visualización de ganancias
+        requests.tsx      # Gestión de solicitudes de paseos
+```
 
 ## ⚡ Tecnologías Utilizadas
 
